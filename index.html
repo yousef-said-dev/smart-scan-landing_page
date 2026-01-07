@@ -11,6 +11,15 @@
 </head>
 <body>
 
+    <!-- Global Animated Background -->
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
@@ -33,41 +42,62 @@
     <section id="hero" class="hero">
         <div class="container hero-container">
             <div class="hero-content reveal-left">
-                <h1>The Real-World <br><span class="text-gradient">Face Recognition</span> <br>Attendance System</h1>
-                <p class="hero-subtitle">Secure, fast, and automated attendance tracking for modern schools and organizations. Eliminate manual errors and save time.</p>
+                <div class="badge">New v2.0 Available</div>
+                <h1>The Future of <br><span class="text-gradient">Automated Attendance</span> <br>is Here</h1>
+                <p class="hero-subtitle">Smart-Scan forces a paradigm shift from manual tracking to instant, secure face recognition. A fully customizable solution for any organization, company, or institution.</p>
                 <div class="hero-buttons">
-                    <a href="#features" class="btn btn-primary">Learn More</a>
-                    <a href="#plans" class="btn btn-secondary">View Plans</a>
+                    <a href="#features" class="btn btn-primary">How It Works</a>
+                    <a href="#plans" class="btn btn-secondary">Get Started</a>
                 </div>
             </div>
             <div class="hero-visual reveal-right">
-                <!-- Abstract Abstract Shape SVG -->
+                <!-- Abstract Tech Shape SVG -->
                 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
                     <defs>
-                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#64ffda;stop-opacity:0.8" />
-                            <stop offset="100%" style="stop-color:#0a192f;stop-opacity:0" />
+                        <linearGradient id="gradHero" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#64ffda;stop-opacity:0.6" />
+                            <stop offset="100%" style="stop-color:#0a192f;stop-opacity:0.1" />
                         </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="4.5" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
                     </defs>
+                    
+                    <!-- Revolving Rings -->
+                    <circle cx="250" cy="250" r="180" stroke="#112240" stroke-width="2" fill="none" class="ring ring-1"/>
+                    <circle cx="250" cy="250" r="140" stroke="#64ffda" stroke-width="1" fill="none" opacity="0.3" class="ring ring-2"/>
+                    <circle cx="250" cy="250" r="100" stroke="#64ffda" stroke-width="2" fill="none" opacity="0.5" class="ring ring-3" stroke-dasharray="10 20"/>
+
+                    <!-- Central Tech Shape -->
                     <g class="floating-shape">
-                        <path fill="url(#grad1)" d="M43.7,-76.3C57.3,-69.1,69.5,-59.6,78.8,-48.1C88.1,-36.6,94.5,-23.1,93.7,-9.9C92.9,3.3,84.9,16.2,76.5,28.6C68.1,41,59.3,53,48.2,62.1C37.1,71.2,23.7,77.4,9.6,79.5C-4.5,81.6,-19.3,79.6,-33.1,73.5C-46.9,67.4,-59.7,57.2,-69.1,45C-78.5,32.8,-84.5,18.6,-85.1,4.1C-85.7,-10.4,-80.9,-25.2,-72.1,-37.8C-63.3,-50.4,-50.5,-60.8,-37.4,-68.3C-24.3,-75.8,-10.8,-80.4,1.8,-83.5C14.4,-86.6,28.8,-88.2,43.7,-76.3Z" transform="translate(250 250)" />
+                        <path fill="url(#gradHero)" d="M43.7,-76.3C57.3,-69.1,69.5,-59.6,78.8,-48.1C88.1,-36.6,94.5,-23.1,93.7,-9.9C92.9,3.3,84.9,16.2,76.5,28.6C68.1,41,59.3,53,48.2,62.1C37.1,71.2,23.7,77.4,9.6,79.5C-4.5,81.6,-19.3,79.6,-33.1,73.5C-46.9,67.4,-59.7,57.2,-69.1,45C-78.5,32.8,-84.5,18.6,-85.1,4.1C-85.7,-10.4,-80.9,-25.2,-72.1,-37.8C-63.3,-50.4,-50.5,-60.8,-37.4,-68.3C-24.3,-75.8,-10.8,-80.4,1.8,-83.5C14.4,-86.6,28.8,-88.2,43.7,-76.3Z" transform="translate(250 250)" />
                     </g>
-                    <!-- Face Scan Graphic Representation -->
+                    
+                    <!-- Scanning HUD Elements -->
                     <g class="face-scan" transform="translate(150 150) scale(0.4)">
-                        <rect x="100" y="100" width="300" height="300" rx="40" fill="none" stroke="#64ffda" stroke-width="4" class="scan-frame"/>
-                        <circle cx="250" cy="250" r="80" fill="none" stroke="#64ffda" stroke-width="4" opacity="0.5"/>
-                         <path d="M 210 230 Q 250 230 290 230" stroke="#64ffda" stroke-width="4" fill="none"/>
-                         <circle cx="220" cy="210" r="10" fill="#64ffda"/>
-                         <circle cx="280" cy="210" r="10" fill="#64ffda"/>
-                        <line x1="100" y1="150" x2="400" y2="150" stroke="#64ffda" stroke-width="2" class="scan-line" />
+                        <path d="M 50 100 V 50 H 100" stroke="#64ffda" stroke-width="5" fill="none" filter="url(#glow)"/>
+                        <path d="M 450 100 V 50 H 400" stroke="#64ffda" stroke-width="5" fill="none" filter="url(#glow)"/>
+                        <path d="M 50 400 V 450 H 100" stroke="#64ffda" stroke-width="5" fill="none" filter="url(#glow)"/>
+                        <path d="M 450 400 V 450 H 400" stroke="#64ffda" stroke-width="5" fill="none" filter="url(#glow)"/>
+
+                        <!-- Face Outline -->
+                        <path d="M 150 180 Q 250 400 350 180" stroke="#64ffda" stroke-width="2" fill="none" opacity="0.6"/>
+                        <rect x="180" y="150" width="40" height="10" fill="#64ffda" opacity="0.8"/>
+                        <rect x="280" y="150" width="40" height="10" fill="#64ffda" opacity="0.8"/>
+                         
+                        <!-- Scanning Line -->
+                        <line x1="20" y1="100" x2="480" y2="100" stroke="#fff" stroke-width="3" class="scan-line" opacity="0.8">
+                            <animate attributeName="y1" values="50;450;50" dur="3s" repeatCount="indefinite" />
+                            <animate attributeName="y2" values="50;450;50" dur="3s" repeatCount="indefinite" />
+                        </line>
                     </g>
                 </svg>
             </div>
         </div>
-        
-        <!-- Background Abstract Shapes -->
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
     </section>
 
     <!-- Features Section -->
@@ -77,27 +107,36 @@
             <div class="features-grid">
                 
                 <div class="feature-card reveal-up delay-100">
+                    <div class="card-bg-icon">
+                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                     </div>
-                    <h3>Reliable Face Recognition</h3>
-                    <p>Built for the real world. Our algorithm is stable, fast, and works in various lighting conditions for maximum accuracy.</p>
+                    <h3>Reliable Identity Verification</h3>
+                    <p>Built for the real world. Our algorithm is stable, fast, and works in various lighting conditions to verify staff, students, or visitors.</p>
                 </div>
 
                 <div class="feature-card reveal-up delay-200">
+                    <div class="card-bg-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                     </div>
-                    <h3>Automated Attendance</h3>
-                    <p>Forget manual roll calls. Smart-Scan tracks attendance, lateness, and absence automatically in real-time.</p>
+                    <h3>Automated Tracking</h3>
+                    <p>Forget manual roll calls. Smart-Scan tracks attendance, lateness, and hours automatically in real-time for any workforce.</p>
                 </div>
 
                 <div class="feature-card reveal-up delay-300">
+                    <div class="card-bg-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path></svg>
+                    </div>
                     <div class="icon-box">
                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                     </div>
-                    <h3>Manager & Parent Access</h3>
-                    <p>Keep everyone in the loop. Generate clear reports and send instant notifications to parents and admins.</p>
+                    <h3>Admin & Insight Access</h3>
+                    <p>Keep everyone in data-driven loops. Generate clear reports, payroll exports, and send instant notifications to managers.</p>
                 </div>
 
             </div>
@@ -107,34 +146,35 @@
     <!-- Plans Section -->
     <section id="plans" class="plans">
         <div class="container">
-            <h2 class="section-title reveal-up">Choose Your <span class="accent">Plan</span></h2>
+            <h2 class="section-title reveal-up">Flexible <span class="accent">Plans</span></h2>
             <div class="plans-grid">
                 
                 <div class="plan-card reveal-up delay-100">
                     <div class="plan-header">
-                        <h3>Basic</h3>
+                        <h3>Starter</h3>
                         <div class="price">$29<span>/mo</span></div>
                     </div>
                     <ul class="plan-features">
-                        <li>For small schools</li>
-                        <li>Daily Attendance</li>
-                        <li>Basic Reporting</li>
+                        <li>For small teams</li>
+                        <li>Daily Logs</li>
+                        <li>Basic CSV Export</li>
                         <li>Email Support</li>
                     </ul>
                     <a href="#" class="btn btn-outline">Sign Up</a>
                 </div>
 
                 <div class="plan-card featured reveal-up delay-200">
+                    <div class="element-decoration"></div>
                     <div class="popular-tag">Most Popular</div>
                     <div class="plan-header">
-                        <h3>Pro</h3>
+                        <h3>Professional</h3>
                         <div class="price">$79<span>/mo</span></div>
                     </div>
                     <ul class="plan-features">
-                        <li>Full Features</li>
-                        <li>Multiple Classes</li>
-                        <li>Lateness Tracking</li>
-                        <li>Parent Notifications</li>
+                        <li>Unlimited Users</li>
+                        <li>Department Management</li>
+                        <li>Lateness & Overtime</li>
+                        <li>Slack/Email Alerts</li>
                     </ul>
                     <a href="#" class="btn btn-primary">Sign Up</a>
                 </div>
@@ -145,9 +185,9 @@
                         <div class="price">Custom</div>
                     </div>
                     <ul class="plan-features">
-                        <li>Unlimited Students</li>
-                        <li>Priority Support</li>
-                        <li>Custom Integration</li>
+                        <li>Fully Customizable</li>
+                        <li>On-Premise Deployment</li>
+                        <li>API Access</li>
                         <li>Dedicated Account Manager</li>
                     </ul>
                     <a href="#" class="btn btn-outline">Contact Us</a>
@@ -159,10 +199,73 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container about-container reveal-up">
-            <div class="about-content">
+        <div class="container about-container">
+            <div class="about-text reveal-left">
                 <h2>About <span class="accent">Smart-Scan</span></h2>
-                <p>We aren't just reinventing face recognition technology; we are transforming it into a practical, reliable, and everyday system for educational institutions. Our mission is to streamline administrative tasks so educators can focus on what matters most—teaching.</p>
+                <p class="about-lead">Smart-Scan is not just technology; it's a modular platform designed to adapt to your organization's specific workflow.</p>
+                <p>We leverage advanced computer vision to create a passive, non-intrusive attendance layer that integrates seamlessly into any environment—schools, corporate offices, or event venues.</p>
+                
+                <ul class="about-list">
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Tailored Customization</strong>
+                            <p>We adapt the logic to fit your specific rules, shifts, or class schedules.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Hardware Agnostic</strong>
+                            <p>Works with existing IP cameras, standard webcams, or dedicated kiosks.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Secure & Private</strong>
+                            <p>Data is encrypted locally. We prioritize user privacy compliant with GDPR and other regulations.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="about-visual reveal-right">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="about-svg">
+                    <defs>
+                         <linearGradient id="gradAbout" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#112240;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#1d3f72;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Mockup of a dashboard or system view -->
+                    <rect x="20" y="20" width="360" height="260" rx="10" fill="url(#gradAbout)" stroke="#64ffda" stroke-width="2" opacity="0.8"/>
+                    
+                    <!-- Header Bar -->
+                    <rect x="20" y="20" width="360" height="40" rx="10" fill="#0a192f" opacity="0.6"/>
+                    <circle cx="40" cy="40" r="5" fill="#ff5f56"/>
+                    <circle cx="60" cy="40" r="5" fill="#ffbd2e"/>
+                    <circle cx="80" cy="40" r="5" fill="#27c93f"/>
+                    
+                    <!-- Content Lines -->
+                    <rect x="50" y="90" width="100" height="80" rx="5" fill="#64ffda" opacity="0.2"/>
+                    <rect x="50" y="180" width="100" height="20" rx="2" fill="#8892b0" opacity="0.3"/>
+                    <rect x="50" y="210" width="80" height="10" rx="2" fill="#8892b0" opacity="0.2"/>
+
+                    <rect x="180" y="90" width="170" height="40" rx="5" fill="#64ffda" opacity="0.1"/>
+                    <rect x="180" y="140" width="170" height="40" rx="5" fill="#64ffda" opacity="0.1"/>
+                    <rect x="180" y="190" width="170" height="40" rx="5" fill="#64ffda" opacity="0.1"/>
+                    
+                    <!-- Floating 'Verified' Checkmarks -->
+                     <circle cx="330" cy="110" r="12" fill="#64ffda"/>
+                     <path d="M324 110 L328 114 L336 106" stroke="#0a192f" stroke-width="3" fill="none"/>
+
+                     <circle cx="330" cy="160" r="12" fill="#64ffda"/>
+                     <path d="M324 160 L328 164 L336 156" stroke="#0a192f" stroke-width="3" fill="none"/>
+                     
+                     <!-- Connection Lines Animation -->
+                     <path d="M 150 130 L 180 110" stroke="#64ffda" stroke-width="2" stroke-dasharray="5,5" class="dash-line"/>
+                </svg>
             </div>
         </div>
     </section>
