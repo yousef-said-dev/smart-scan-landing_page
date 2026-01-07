@@ -6,7 +6,7 @@
     <title>Smart-Scan | Face Recognition Attendance</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,6 @@
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
         <div class="blob blob-3"></div>
-        <div class="blob blob-4"></div>
         <div class="grid-overlay"></div>
     </div>
 
@@ -42,8 +41,8 @@
     <section id="hero" class="hero">
         <div class="container hero-container">
             <div class="hero-content reveal-left">
-                <div class="badge">New v2.0 Available</div>
-                <h1>The Future of <br><span class="text-gradient">Automated Attendance</span> <br>is Here</h1>
+                <div class="badge">Next Gen Attendance</div>
+                <h1>The Future of <br><span class="text-gradient">Automated Analytics</span> <br>is Here</h1>
                 <p class="hero-subtitle">Smart-Scan forces a paradigm shift from manual tracking to instant, secure face recognition. A fully customizable solution for any organization, company, or institution.</p>
                 <div class="hero-buttons">
                     <a href="#features" class="btn btn-primary">How It Works</a>
@@ -90,53 +89,100 @@
                         <rect x="280" y="150" width="40" height="10" fill="#64ffda" opacity="0.8"/>
                          
                         <!-- Scanning Line -->
-                        <line x1="20" y1="100" x2="480" y2="100" stroke="#fff" stroke-width="3" class="scan-line" opacity="0.8">
-                            <animate attributeName="y1" values="50;450;50" dur="3s" repeatCount="indefinite" />
-                            <animate attributeName="y2" values="50;450;50" dur="3s" repeatCount="indefinite" />
-                        </line>
+                        <line x1="20" y1="100" x2="480" y2="100" stroke="#fff" stroke-width="3" class="scan-line" opacity="0.8"></line>
                     </g>
                 </svg>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- NEW 'ZIG-ZAG' Features Section -->
     <section id="features" class="features">
         <div class="container">
             <h2 class="section-title reveal-up">Why <span class="accent">Smart-Scan</span>?</h2>
-            <div class="features-grid">
+            
+            <div class="features-wrapper">
                 
-                <div class="feature-card reveal-up delay-100">
-                    <div class="card-bg-icon">
-                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <!-- Feature 1 -->
+                <div class="feature-row reveal-up">
+                    <div class="feature-text">
+                        <div class="feature-icon-lg">
+                            <!-- Target Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        </div>
+                        <h3>Precision Face Recognition</h3>
+                        <p>Our advanced AI algorithm identifies individuals in milliseconds, even in low light or from difficult angles. It distinguishes real faces from photos to prevent any attempted spoofing.</p>
+                        <ul class="feature-bullets">
+                            <li>99.9% Verified Accuracy</li>
+                            <li>Works with masks and glasses</li>
+                        </ul>
                     </div>
-                    <div class="icon-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <div class="feature-visual visual-1">
+                        <!-- Simulated Code/Data View -->
+                        <div class="code-card">
+                            <div class="code-header">
+                                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            </div>
+                            <div class="code-body">
+                                <code>&gt; Identifying User...</code><br>
+                                <code>&gt; Match Found: ID #8492</code><br>
+                                <code>&gt; Status: <span class="accent">Verified</span></code>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Reliable Identity Verification</h3>
-                    <p>Built for the real world. Our algorithm is stable, fast, and works in various lighting conditions to verify staff, students, or visitors.</p>
                 </div>
 
-                <div class="feature-card reveal-up delay-200">
-                    <div class="card-bg-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <!-- Feature 2 -->
+                <div class="feature-row reverse reveal-up">
+                    <div class="feature-text">
+                        <div class="feature-icon-lg">
+                             <!-- Lightning/Fast Icon -->
+                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        </div>
+                        <h3>Fully Automated Tracking</h3>
+                        <p>Stop wasting time with spreadsheets. Attendance, lateness, and breaks are logged automatically the moment a face is seen by the camera system.</p>
+                        <ul class="feature-bullets">
+                            <li>Real-time database sync</li>
+                            <li>Zero manual input required</li>
+                        </ul>
                     </div>
-                    <div class="icon-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <div class="feature-visual visual-2">
+                         <div class="stats-card">
+                             <div class="stat-item">
+                                 <span class="stat-label">Daily Scans</span>
+                                 <span class="stat-num">1,420</span>
+                             </div>
+                             <div class="stat-item">
+                                 <span class="stat-label">Efficiency</span>
+                                 <span class="stat-num accent">+45%</span>
+                             </div>
+                         </div>
                     </div>
-                    <h3>Automated Tracking</h3>
-                    <p>Forget manual roll calls. Smart-Scan tracks attendance, lateness, and hours automatically in real-time for any workforce.</p>
                 </div>
 
-                <div class="feature-card reveal-up delay-300">
-                    <div class="card-bg-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path></svg>
+                <!-- Feature 3 -->
+                <div class="feature-row reveal-up">
+                    <div class="feature-text">
+                        <div class="feature-icon-lg">
+                           <!-- Analytics/Chart Icon -->
+                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <h3>Powerful Admin Insights</h3>
+                        <p>Get instant notifications on WhatsApp or Email. Access detailed analytics and export simplified reports for payroll, HR, or grading.</p>
+                         <ul class="feature-bullets">
+                            <li>Export to Excel/CSV</li>
+                            <li>Instant Alert System</li>
+                        </ul>
                     </div>
-                    <div class="icon-box">
-                       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <div class="feature-visual visual-3">
+                         <div class="notification-card">
+                             <div class="notif-icon">🔔</div>
+                             <div class="notif-content">
+                                 <strong>Admin Alert</strong>
+                                 <p>Employee #42 marked as Late (09:15 AM)</p>
+                             </div>
+                         </div>
                     </div>
-                    <h3>Admin & Insight Access</h3>
-                    <p>Keep everyone in data-driven loops. Generate clear reports, payroll exports, and send instant notifications to managers.</p>
                 </div>
 
             </div>
@@ -158,49 +204,50 @@
                         <li>For small teams</li>
                         <li>Daily Excel Logs</li>
                         <li>Customization for Excel Reports</li>
+                        <li>Email Support</li>
                     </ul>
                     <a href="#" class="btn btn-outline">Sign Up</a>
                 </div>
-                
+
                 <div class="plan-card featured reveal-up delay-200">
-                    <div class="element-decoration"></div>
                     <div class="popular-tag">Most Popular</div>
                     <div class="plan-header">
                         <h3>Standard</h3>
                         <div class="price">$50<span>/mo</span></div>
                     </div>
                     <ul class="plan-features">
-                        <li>Database integration</li>
+                        <li>Database Integration</li>
                         <li>WebSite for Employees Management</li>
-                        <li>Daily Attendance Analytics</li>
-                        <li>Rules Breaks Alerts</li>
+                        <li>Daily Analytics Dashboard</li>
+                        <li>Rule Break Alerts</li>
                     </ul>
                     <a href="#" class="btn btn-primary">Sign Up</a>
                 </div>
-                
+
                 <div class="plan-card reveal-up delay-100">
                     <div class="plan-header">
                         <h3>Premium</h3>
-                        <div class="price">$20<span>/mo</span></div>
+                        <div class="price">$55<span>/mo</span></div>
                     </div>
                     <ul class="plan-features">
-                        <li>All Previouse Features</li>
+                        <li>All Previous Features</li>
                         <li>WhatsApp Notifications</li>
-                        <li>Mobile App with All Website Features</li>
+                        <li>Mobile App Access</li>
+                        <li>Priority Support</li>
                     </ul>
                     <a href="#" class="btn btn-outline">Sign Up</a>
                 </div>
-
-                <div class="plan-card reveal-up delay-300">
+                
+                 <div class="plan-card reveal-up delay-300">
                     <div class="plan-header">
                         <h3>Enterprise</h3>
                         <div class="price">Custom</div>
                     </div>
                     <ul class="plan-features">
-                        <li>Fully Customizable for each Client Requirements</li>
-                        <li></li>
-                        <li>API Access</li>
+                        <li>Fully Customizable Logic</li>
+                        <li>Tailored for Client Requirements</li>
                         <li>Dedicated Account Manager</li>
+                        <li>On-Premise Server Setup</li>
                     </ul>
                     <a href="#" class="btn btn-outline">Contact Us</a>
                 </div>
@@ -214,7 +261,7 @@
         <div class="container about-container">
             <div class="about-text reveal-left">
                 <h2>About <span class="accent">Smart-Scan</span></h2>
-                <p class="about-lead">Smart-Scan is not just technology; it's a modular platform designed to adapt to your organization's specific workflow.</p>
+                <p class="about-lead">Smart-Scan is a modular platform designed to adapt to your organization's specific workflow.</p>
                 <p>We leverage advanced computer vision to create a passive, non-intrusive attendance layer that integrates seamlessly into any environment—schools, corporate offices, or event venues.</p>
                 
                 <ul class="about-list">
@@ -243,40 +290,66 @@
             </div>
             
             <div class="about-visual reveal-right">
+                <!-- FACE RECOGNITION DEMO SVG v3 (Fixed Silhouette) -->
                 <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="about-svg">
                     <defs>
-                         <linearGradient id="gradAbout" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#112240;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#1d3f72;stop-opacity:1" />
+                        <clipPath id="screenClip">
+                             <rect x="40" y="30" width="320" height="240" rx="12" />
+                        </clipPath>
+                         <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#64ffda;stop-opacity:0" />
+                            <stop offset="50%" style="stop-color:#64ffda;stop-opacity:0.6" />
+                            <stop offset="100%" style="stop-color:#64ffda;stop-opacity:0" />
                         </linearGradient>
                     </defs>
-                    <!-- Mockup of a dashboard or system view -->
-                    <rect x="20" y="20" width="360" height="260" rx="10" fill="url(#gradAbout)" stroke="#64ffda" stroke-width="2" opacity="0.8"/>
-                    
-                    <!-- Header Bar -->
-                    <rect x="20" y="20" width="360" height="40" rx="10" fill="#0a192f" opacity="0.6"/>
-                    <circle cx="40" cy="40" r="5" fill="#ff5f56"/>
-                    <circle cx="60" cy="40" r="5" fill="#ffbd2e"/>
-                    <circle cx="80" cy="40" r="5" fill="#27c93f"/>
-                    
-                    <!-- Content Lines -->
-                    <rect x="50" y="90" width="100" height="80" rx="5" fill="#64ffda" opacity="0.2"/>
-                    <rect x="50" y="180" width="100" height="20" rx="2" fill="#8892b0" opacity="0.3"/>
-                    <rect x="50" y="210" width="80" height="10" rx="2" fill="#8892b0" opacity="0.2"/>
 
-                    <rect x="180" y="90" width="170" height="40" rx="5" fill="#64ffda" opacity="0.1"/>
-                    <rect x="180" y="140" width="170" height="40" rx="5" fill="#64ffda" opacity="0.1"/>
-                    <rect x="180" y="190" width="170" height="40" rx="5" fill="#64ffda" opacity="0.1"/>
+                    <!-- Background Screen Frame -->
+                    <rect x="30" y="20" width="340" height="260" rx="15" fill="#112240" stroke="#8892b0" stroke-width="2"/>
                     
-                    <!-- Floating 'Verified' Checkmarks -->
-                     <circle cx="330" cy="110" r="12" fill="#64ffda"/>
-                     <path d="M324 110 L328 114 L336 106" stroke="#0a192f" stroke-width="3" fill="none"/>
+                    <!-- Inner Screen Content -->
+                    <g clip-path="url(#screenClip)">
+                        <rect x="40" y="30" width="320" height="240" fill="#0d192e"/>
+                        
+                        <!-- CLEAR FACE SILHOUETTE (Circle + Shoulders) -->
+                        <g transform="translate(200, 160)">
+                            <!-- Head -->
+                            <circle cx="0" cy="-25" r="35" fill="#1d3f72" opacity="0.8" stroke="#64ffda" stroke-width="1.5"/>
+                            <!-- Shoulders/Body -->
+                            <path d="M -50 60 Q -50 20 0 20 Q 50 20 50 60 L 50 90 L -50 90 Z" fill="#1d3f72" opacity="0.8" stroke="#64ffda" stroke-width="1.5"/>
+                        </g>
 
-                     <circle cx="330" cy="160" r="12" fill="#64ffda"/>
-                     <path d="M324 160 L328 164 L336 156" stroke="#0a192f" stroke-width="3" fill="none"/>
-                     
-                     <!-- Connection Lines Animation -->
-                     <path d="M 150 130 L 180 110" stroke="#64ffda" stroke-width="2" stroke-dasharray="5,5" class="dash-line"/>
+                        <!-- Facial Grid Points on Head -->
+                        <circle cx="185" cy="125" r="2" fill="#64ffda"/>
+                        <circle cx="215" cy="125" r="2" fill="#64ffda"/>
+                        <circle cx="200" cy="135" r="2" fill="#64ffda"/>
+                        <circle cx="190" cy="150" r="2" fill="#64ffda"/> <!-- mouth L -->
+                        <circle cx="210" cy="150" r="2" fill="#64ffda"/> <!-- mouth R -->
+                        
+                        <!-- Bounding Box Corners -->
+                        <!-- Top Left -->
+                        <path d="M 130 80 L 130 110" stroke="#64ffda" stroke-width="4" fill="none"/>
+                        <path d="M 130 80 L 160 80" stroke="#64ffda" stroke-width="4" fill="none"/>
+                        <!-- Top Right -->
+                        <path d="M 270 80 L 270 110" stroke="#64ffda" stroke-width="4" fill="none"/>
+                        <path d="M 270 80 L 240 80" stroke="#64ffda" stroke-width="4" fill="none"/>
+                        <!-- Bottom Left -->
+                        <path d="M 130 220 L 130 190" stroke="#64ffda" stroke-width="4" fill="none"/>
+                        <path d="M 130 220 L 160 220" stroke="#64ffda" stroke-width="4" fill="none"/>
+                        <!-- Bottom Right -->
+                        <path d="M 270 220 L 270 190" stroke="#64ffda" stroke-width="4" fill="none"/>
+                        <path d="M 270 220 L 240 220" stroke="#64ffda" stroke-width="4" fill="none"/>
+
+                        <!-- Scanning Beam -->
+                        <rect x="30" y="80" width="340" height="40" fill="url(#scanGrad)" opacity="0.5">
+                             <animate attributeName="y" values="30;220;30" dur="2s" repeatCount="indefinite" />
+                        </rect>
+                        
+                        <!-- 'ID MATCH' Label Popup -->
+                        <rect x="280" y="50" width="80" height="25" rx="4" fill="#64ffda" opacity="0.9">
+                            <animate attributeName="opacity" values="0.9;0.5;0.9" dur="1s" repeatCount="indefinite"/>
+                        </rect>
+                        <text x="290" y="67" font-size="12" font-family="monospace" font-weight="bold" fill="#0a192f">MATCHED</text>
+                    </g>
                 </svg>
             </div>
         </div>
@@ -287,8 +360,11 @@
         <div class="container footer-container">
             <div class="footer-brand">
                 <h3>Smart-Scan<span class="accent">.</span></h3>
+                <center>
                 <p class="copyright">© 2026 Smart-Scan. All rights reserved.</p>
+            </center>
             </div>
+
             <div class="footer-links">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
